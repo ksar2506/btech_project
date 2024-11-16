@@ -3,46 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Betting - A Comprehensive Guide</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Betting World</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to the World of Betting</h1>
+        <div class="logo">BettingWorld</div>
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#types">Types of Betting</a></li>
-                <li><a href="#risks">Risks & Regulations</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="#about">About</a>
+            <a href="#types">Types</a>
+            <a href="#calculator">Calculator</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>About Betting</h2>
-        <p>Betting involves predicting outcomes and wagering money or other stakes on those predictions. It has a long history and is prevalent in various forms, such as sports betting, casinos, and online platforms.</p>
-    </section>
+    <main>
+        <section id="about">
+            <div class="section-header">
+                <h2>About Betting</h2>
+                <p>Understand the world of betting and gambling.</p>
+            </div>
+            <p>Betting involves predicting outcomes and wagering money on those predictions. It has been a major part of human culture for centuries. Betting can range from sports to casinos to online platforms.</p>
+        </section>
 
-    <section id="types">
-        <h2>Types of Betting</h2>
-        <ul>
-            <li>Sports Betting</li>
-            <li>Casino Games</li>
-            <li>Online Betting Platforms</li>
-            <li>Lottery and Raffles</li>
-        </ul>
-    </section>
+        <section id="types">
+            <div class="section-header">
+                <h2>Types of Betting</h2>
+                <p>Different ways to bet and win big!</p>
+            </div>
+            <ul>
+                <li>Sports Betting</li>
+                <li>Casino Games</li>
+                <li>Online Betting Platforms</li>
+                <li>Lottery and Raffles</li>
+            </ul>
+        </section>
 
-    <section id="risks">
-        <h2>Risks and Regulations</h2>
-        <p>While betting can be entertaining, it also carries risks, including financial losses and addiction. It is essential to bet responsibly and understand the legal frameworks in your region.</p>
-    </section>
+        <section id="calculator">
+            <div class="section-header">
+                <h2>Betting Calculator</h2>
+                <p>Calculate your potential winnings based on your bet!</p>
+            </div>
+            <div class="calculator">
+                <input type="number" id="bet-amount" placeholder="Enter Bet Amount" />
+                <input type="number" id="odds" placeholder="Enter Odds" />
+                <button onclick="calculateWinnings()">Calculate Winnings</button>
+                <div id="result"></div>
+            </div>
+        </section>
 
-    <footer id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: info@bettingguide.com</p>
-        <p>Phone: +123 456 7890</p>
+        <section id="contact">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>If you have any questions, feel free to contact us.</p>
+            </div>
+            <p>Email us at: <a href="mailto:support@bettingworld.com">support@bettingworld.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BettingWorld. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
